@@ -46,6 +46,7 @@ void* computeSum(void* args) {
 	int col = (*index)%MAX;
 	
 	matSumResult[row][col] = matA[row][col] + matB[row][col];
+    return NULL;
 }
 
 // Fetches the appropriate coordinates from the argument, and sets
@@ -58,6 +59,7 @@ void* computeDiff(void* args) {
 	int col = (*index)%MAX;
 	
 	matDiffResult[row][col] = matA[row][col] - matB[row][col];
+    return NULL;
 }
 
 // Fetches the appropriate coordinates from the argument, and sets
@@ -70,6 +72,7 @@ void* computeProduct(void* args) {
 	int col = (*index)%MAX;
 	
 	matProductResult[row][col] = matA[row][col] * matB[row][col];
+    return NULL;
 }
 
 // Spawn a thread to fill each cell in each result matrix.
