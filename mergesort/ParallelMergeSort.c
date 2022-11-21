@@ -1,3 +1,5 @@
+// Tyrone Smith + Deanté Taylor
+
 #include <stdio.h>
 #include <pthread.h>
 #include <stdlib.h>
